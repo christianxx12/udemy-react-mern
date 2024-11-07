@@ -1,13 +1,12 @@
-import { useRef } from "react"
+import { useRef } from "react";
 
 export function FocusScreen() {
-
-  const inputRef = useRef()
+  const inputRef = useRef();
 
   function onClick() {
-    // document.querySelector('input').select()
-    inputRef.current.select()
-    console.log(inputRef)
+    // document.querySelector("input").select();
+    // console.log(inputRef);
+    inputRef.current.select();
   }
 
   return (
@@ -22,12 +21,9 @@ export function FocusScreen() {
         className="form-control"
       />
 
-      <button
-        className="btn btn-primary mt-2"
-        onClick={onClick}
-      >
+      <button className="btn btn-primary mt-2" onClick={onClick}>
         Set Focus
       </button>
     </>
-  )
+  );
 }
