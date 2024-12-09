@@ -2,16 +2,15 @@ import { useTodos } from "../hooks/useTodos";
 import { TodoAdd } from "./TodoAdd";
 import { TodoList } from "./TodoList";
 
-
 export const TodoApp = () => {
-
   const {
     todos,
     todosCount,
     todosPending,
     handleNewTodo,
     handleDeleteTodo,
-    handleToggleTodo } = useTodos()
+    handleToggleTodo,
+  } = useTodos();
 
   return (
     <>
